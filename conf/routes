@@ -1,0 +1,2 @@
+GET     /       controllers.HomeController.index
+POST    /roll   controllers.GameController.roll

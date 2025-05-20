@@ -1,0 +1,26 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 1 initial tasks for 1 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(GameServiceTest, sbt.ForkMain$SubclassFingerscan@5e5792a0, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGameServiceTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcomb[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 1 for C(1, 0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 5 for C(5, 1)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 10 for C(5, 2)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 10 for C(5, 3)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 1 for C(5, 5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise a value error for number of sucessful dices rolls higher than number of dices[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mbinomialProbability[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should calculate correct value for exact 'mode'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should calculate correct value for atLeast 'mode'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should throw IllegalArgumentException for invalid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should throw IllegalArgumentException for invalid mode[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 10 events.[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 385 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameServiceTest[0m
