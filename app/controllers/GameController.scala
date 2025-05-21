@@ -4,6 +4,7 @@ import javax.inject._
 import play.api.mvc._
 import play.api.libs.json._
 import models.GameService
+import models.{DiceMode, Exact, AtLeast}
 
 @Singleton
 class GameController @Inject()(val controllerComponents: ControllerComponents) extends BaseController:
@@ -11,13 +12,14 @@ class GameController @Inject()(val controllerComponents: ControllerComponents) e
   def roll: Action[JsValue] = Action(parse.json) { request =>
     val json = request.body
 
-    def parseExpectedValue(value: String): Map[String, Any] =
+    def parseExpectedValue(value: String): (Int, DiceMode) =
       if value.endsWith("+") then
-        Map("expectedValue" -> value.dropRight(1).toInt, "mode" -> "atLeast")
+        val numValue = value.dropRight(1).toInt
+        (numValue, AtLeast)
       else
-        Map("expectedValue" -> value.toInt, "mode" -> "exact")
+        (value.toInt, Exact)
 
-    try {
+    try
       val nbDicesA = (json \ "nbDicesA").as[Int]
       val nbDicesB = (json \ "nbDicesB").as[Int]
       val expValueA = (json \ "expectedValueA").as[String]
@@ -25,41 +27,37 @@ class GameController @Inject()(val controllerComponents: ControllerComponents) e
       val occurrencesA = (json \ "occurrencesA").as[Int]
       val occurrencesB = (json \ "occurrencesB").as[Int]
 
-      val parseExpValueA = parseExpectedValue(expValueA)
-      val parseExpValueB = parseExpectedValue(expValueB)
+      // Validate input parameters
+      if nbDicesA < 0 || nbDicesB < 0 then
+        BadRequest("Number of dice must be non-negative")
+      else if occurrencesA < 0 || occurrencesB < 0 then
+        BadRequest("Number of occurrences must be non-negative")
+      else if occurrencesA > nbDicesA || occurrencesB > nbDicesB then
+        BadRequest("Number of occurrences cannot exceed number of dice")
+      else
+        val (expValA, modeA) = parseExpectedValue(expValueA)
+        val (expValB, modeB) = parseExpectedValue(expValueB)
 
-      val expValA = parseExpValueA("expectedValue").asInstanceOf[Int]
-      val expValB = parseExpValueB("expectedValue").asInstanceOf[Int]
-      val modeA = parseExpValueA("mode").asInstanceOf[String]
-      val modeB = parseExpValueB("mode").asInstanceOf[String]
+        // Validate expected values
+        if expValA < 1 || expValA > 6 || expValB < 1 || expValB > 6 then
+          BadRequest("Expected values must be between 1 and 6")
+        else
+          val (probA, probB, winner) = GameService.compareProbabilities(
+            nbDicesA, expValA, occurrencesA,
+            nbDicesB, expValB, occurrencesB,
+            modeA, modeB
+          )
 
-      // Validate expected values
-      if expValA < 1 || expValA > 6 || expValB < 1 || expValB > 6 then
-        BadRequest("Expected values must be between 1 and 6.")
-
-      // Validate mode values
-      val validModes = Set("exact", "atLeast")
-      if !validModes.contains(modeA) || !validModes.contains(modeB) then 
-        BadRequest("Mode must be either 'exact' or 'atLeast'.")
-
-      val (probA, probB, winner) = GameService.compareProbabilities(
-        nbDicesA, expValA, occurrencesA,
-        nbDicesB, expValB, occurrencesB,
-        modeA, modeB
-      )
-
-      val result = Json.obj(
-        "probA" -> probA,
-        "probB" -> probB,
-        "winner" -> winner
-      )
-
-      Ok(result)
-
-    } catch {
+          Ok(Json.obj(
+            "probA" -> probA,
+            "probB" -> probB,
+            "winner" -> winner
+          ))
+    catch
+      case e: NumberFormatException =>
+        BadRequest(s"Invalid number format: ${e.getMessage}")
       case e: IllegalArgumentException =>
-          BadRequest(s"An error occurred: ${e.getMessage}")
+        BadRequest(e.getMessage)
       case e: Exception =>
-        InternalServerError(s"An error occurred: ${e.getMessage}")
-    }  
+        InternalServerError(s"Unexpected error: ${e.getMessage}")
 }
