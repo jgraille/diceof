@@ -20,6 +20,7 @@
             "/Users/jb/.sbt/boot/scala-2.12.20/lib/scala-library.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.10/sbt-bloop_2.12_1.0-2.0.10.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.7/sbt-plugin_2.12_1.0-3.0.7.jar",
+            "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-sbt_2.12_1.0/4.8.1/gatling-sbt_2.12_1.0-4.8.1.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.10.7/main_2.12-1.10.7.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.10.4/io_2.12-1.10.4.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.3.2/bloop-config_2.12-2.3.2.jar",
@@ -32,6 +33,7 @@
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.11.1/sbt-native-packager_2.12_1.0-1.11.1.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-web_2.12_1.0/1.5.8/sbt-web_2.12_1.0-1.5.8.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-js-engine_2.12_1.0/1.3.9/sbt-js-engine_2.12_1.0-1.3.9.jar",
+            "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-enterprise-plugin-commons/1.9.0-M8/gatling-enterprise-plugin-commons-1.9.0-M8.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.10.7/logic_2.12-1.10.7.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.10.7/actions_2.12-1.10.7.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.10.7/main-settings_2.12-1.10.7.jar",
@@ -70,6 +72,8 @@
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-core/0.9.4/trireme-core-0.9.4.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-node10src/0.9.4/trireme-node10src-0.9.4.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/webjars/npm/5.0.0-2/npm-5.0.0-2.jar",
+            "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar",
+            "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-scanner/1.4.0-M3/gatling-scanner-1.4.0-M3.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.10.7/util-relation_2.12-1.10.7.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.10.7/completion_2.12-1.10.7.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.10.7/task-system_2.12-1.10.7.jar",
@@ -114,6 +118,8 @@
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-kernel/0.9.4/trireme-kernel-0.9.4.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mozilla/rhino/1.7.10/rhino-1.7.10.jar",
+            "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar",
+            "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-asm-shaded/9.6/gatling-asm-shaded-9.6.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.27.1/jline-reader-3.27.1.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-builtins/3.27.1/jline-builtins-3.27.1.jar",
             "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.10.7/test-agent-1.10.7.jar",
@@ -184,8 +190,8 @@
                 "import _root_.sbt._",
                 "import _root_.sbt.Keys._",
                 "import _root_.sbt.nio.Keys._",
-                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.play.sbt.Play.autoImport._, _root_.play.sbt.PlayService.autoImport._, _root_.play.sbt.routes.RoutesCompiler.autoImport._, _root_.play.twirl.sbt.SbtTwirl.autoImport._, _root_.com.typesafe.sbt.SbtNativePackager.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin.autoImport._, _root_.com.typesafe.sbt.packager.debian.DebianPlugin.autoImport._, _root_.com.typesafe.sbt.packager.docker.DockerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin.autoImport._, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin.autoImport._, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin.autoImport._, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin.autoImport._, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin.autoImport._, _root_.com.typesafe.sbt.web.SbtWeb.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsEngine.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsTask.autoImport._",
-                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.play.sbt.Play, _root_.play.sbt.PlayFilters, _root_.play.sbt.PlayJava, _root_.play.sbt.PlayLayoutPlugin, _root_.play.sbt.PlayLogback, _root_.play.sbt.PlayMinimalJava, _root_.play.sbt.PlayNettyServer, _root_.play.sbt.PlayPekkoHttp2Support, _root_.play.sbt.PlayPekkoHttpServer, _root_.play.sbt.PlayScala, _root_.play.sbt.PlayService, _root_.play.sbt.PlayWeb, _root_.play.sbt.routes.RoutesCompiler, _root_.play.twirl.sbt.SbtTwirl, _root_.com.typesafe.sbt.SbtNativePackager, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin, _root_.com.typesafe.sbt.packager.debian.DebianDeployPlugin, _root_.com.typesafe.sbt.packager.debian.DebianPlugin, _root_.com.typesafe.sbt.packager.debian.JDebPackaging, _root_.com.typesafe.sbt.packager.docker.DockerPlugin, _root_.com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmDeployPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalDeployPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsDeployPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin, _root_.com.typesafe.sbt.web.SbtWeb, _root_.com.typesafe.sbt.jse.SbtJsEngine, _root_.com.typesafe.sbt.jse.SbtJsTask"
+                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.play.sbt.Play.autoImport._, _root_.play.sbt.PlayService.autoImport._, _root_.play.sbt.routes.RoutesCompiler.autoImport._, _root_.io.gatling.sbt.GatlingPlugin.autoImport._, _root_.play.twirl.sbt.SbtTwirl.autoImport._, _root_.com.typesafe.sbt.SbtNativePackager.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin.autoImport._, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin.autoImport._, _root_.com.typesafe.sbt.packager.debian.DebianPlugin.autoImport._, _root_.com.typesafe.sbt.packager.docker.DockerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin.autoImport._, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin.autoImport._, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin.autoImport._, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin.autoImport._, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin.autoImport._, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin.autoImport._, _root_.com.typesafe.sbt.web.SbtWeb.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsEngine.autoImport._, _root_.com.typesafe.sbt.jse.SbtJsTask.autoImport._",
+                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.play.sbt.Play, _root_.play.sbt.PlayFilters, _root_.play.sbt.PlayJava, _root_.play.sbt.PlayLayoutPlugin, _root_.play.sbt.PlayLogback, _root_.play.sbt.PlayMinimalJava, _root_.play.sbt.PlayNettyServer, _root_.play.sbt.PlayPekkoHttp2Support, _root_.play.sbt.PlayPekkoHttpServer, _root_.play.sbt.PlayScala, _root_.play.sbt.PlayService, _root_.play.sbt.PlayWeb, _root_.play.sbt.routes.RoutesCompiler, _root_.io.gatling.sbt.GatlingPlugin, _root_.play.twirl.sbt.SbtTwirl, _root_.com.typesafe.sbt.SbtNativePackager, _root_.com.typesafe.sbt.packager.archetypes.JavaAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, _root_.com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin, _root_.com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin, _root_.com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin, _root_.com.typesafe.sbt.packager.debian.DebianDeployPlugin, _root_.com.typesafe.sbt.packager.debian.DebianPlugin, _root_.com.typesafe.sbt.packager.debian.JDebPackaging, _root_.com.typesafe.sbt.packager.docker.DockerPlugin, _root_.com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin, _root_.com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin, _root_.com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin, _root_.com.typesafe.sbt.packager.linux.LinuxPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmDeployPlugin, _root_.com.typesafe.sbt.packager.rpm.RpmPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalDeployPlugin, _root_.com.typesafe.sbt.packager.universal.UniversalPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsDeployPlugin, _root_.com.typesafe.sbt.packager.windows.WindowsPlugin, _root_.com.typesafe.sbt.web.SbtWeb, _root_.com.typesafe.sbt.jse.SbtJsEngine, _root_.com.typesafe.sbt.jse.SbtJsTask"
             ]
         },
         "test": {
@@ -268,6 +274,7 @@
                 "/Users/jb/Personal/diceof/project/.bloop/diceof-build/scala-2.12/sbt-1.0/classes",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.10/sbt-bloop_2.12_1.0-2.0.10.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.7/sbt-plugin_2.12_1.0-3.0.7.jar",
+                "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-sbt_2.12_1.0/4.8.1/gatling-sbt_2.12_1.0-4.8.1.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.3.2/bloop-config_2.12-2.3.2.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-routes-compiler_2.12/3.0.7/sbt-routes-compiler_2.12-3.0.7.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-run-support_2.12/3.0.7/play-run-support_2.12-3.0.7.jar",
@@ -278,6 +285,7 @@
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.11.1/sbt-native-packager_2.12_1.0-1.11.1.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-web_2.12_1.0/1.5.8/sbt-web_2.12_1.0-1.5.8.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-js-engine_2.12_1.0/1.3.9/sbt-js-engine_2.12_1.0-1.3.9.jar",
+                "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-enterprise-plugin-commons/1.9.0-M8/gatling-enterprise-plugin-commons-1.9.0-M8.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5.2/jsoniter-scala-core_2.12-2.13.5.2.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.12/0.1.12/unroll-annotation_2.12-0.1.12.jar",
                 "/Users/jb/.sbt/boot/scala-2.12.20/lib/scala-library.jar",
@@ -298,6 +306,8 @@
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-core/0.9.4/trireme-core-0.9.4.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-node10src/0.9.4/trireme-node10src-0.9.4.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/webjars/npm/5.0.0-2/npm-5.0.0-2.jar",
+                "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar",
+                "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-scanner/1.4.0-M3/gatling-scanner-1.4.0-M3.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.7/play-exceptions-3.0.7.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-parser_2.12/2.0.8/twirl-parser_2.12-2.0.8.jar",
@@ -311,6 +321,8 @@
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-kernel/0.9.4/trireme-kernel-0.9.4.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mozilla/rhino/1.7.10/rhino-1.7.10.jar",
+                "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar",
+                "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-asm-shaded/9.6/gatling-asm-shaded-9.6.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.12/4.13.2/trees_2.12-4.13.2.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.12/4.13.2/common_2.12-4.13.2.jar",
                 "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/io_2.12/4.13.2/io_2.12-4.13.2.jar",
@@ -350,6 +362,23 @@
                             "name": "sbt-plugin",
                             "classifier": "sources",
                             "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.7/sbt-plugin_2.12_1.0-3.0.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-sbt",
+                    "version": "4.8.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "gatling-sbt",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-sbt_2.12_1.0/4.8.1/gatling-sbt_2.12_1.0-4.8.1.jar"
+                        },
+                        {
+                            "name": "gatling-sbt",
+                            "classifier": "sources",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-sbt_2.12_1.0/4.8.1/gatling-sbt_2.12_1.0-4.8.1-sources.jar"
                         }
                     ]
                 },
@@ -520,6 +549,23 @@
                             "name": "sbt-js-engine",
                             "classifier": "sources",
                             "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-js-engine_2.12_1.0/1.3.9/sbt-js-engine_2.12_1.0-1.3.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-enterprise-plugin-commons",
+                    "version": "1.9.0-M8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "gatling-enterprise-plugin-commons",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-enterprise-plugin-commons/1.9.0-M8/gatling-enterprise-plugin-commons-1.9.0-M8.jar"
+                        },
+                        {
+                            "name": "gatling-enterprise-plugin-commons",
+                            "classifier": "sources",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-enterprise-plugin-commons/1.9.0-M8/gatling-enterprise-plugin-commons-1.9.0-M8-sources.jar"
                         }
                     ]
                 },
@@ -842,6 +888,40 @@
                     ]
                 },
                 {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.16.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-scanner",
+                    "version": "1.4.0-M3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "gatling-scanner",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-scanner/1.4.0-M3/gatling-scanner-1.4.0-M3.jar"
+                        },
+                        {
+                            "name": "gatling-scanner",
+                            "classifier": "sources",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-scanner/1.4.0-M3/gatling-scanner-1.4.0-M3-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.playframework",
                     "name": "play-exceptions",
                     "version": "3.0.7",
@@ -1059,6 +1139,40 @@
                             "name": "rhino",
                             "classifier": "sources",
                             "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mozilla/rhino/1.7.10/rhino-1.7.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.16.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.gatling",
+                    "name": "gatling-asm-shaded",
+                    "version": "9.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "gatling-asm-shaded",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-asm-shaded/9.6/gatling-asm-shaded-9.6.jar"
+                        },
+                        {
+                            "name": "gatling-asm-shaded",
+                            "classifier": "sources",
+                            "path": "/Users/jb/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/gatling/gatling-asm-shaded/9.6/gatling-asm-shaded-9.6-sources.jar"
                         }
                     ]
                 },

@@ -5,8 +5,12 @@ case object Exact extends DiceMode
 case object AtLeast extends DiceMode
 
 object GameService {
-  // Cache for memoization of combinations
-  private val combCache = scala.collection.mutable.Map[(Int, Int), Int]()
+  // Cache for memoization of combinations with size limit
+  private val MaxCacheSize = 1000
+  private val combCache = new java.util.LinkedHashMap[Tuple2[Int, Int], Int](MaxCacheSize, 0.75f, true) {
+    override protected def removeEldestEntry(eldest: java.util.Map.Entry[Tuple2[Int, Int], Int]): Boolean =
+      size() > MaxCacheSize
+  }
 
   /**
    * Computes the binomial coefficient C(n, k) = n! / (k! * (n - k)!).
@@ -22,14 +26,19 @@ object GameService {
     require(k <= n, "k cannot be greater than n")
     require(n >= 0 && k >= 0, "n and k must be non-negative")
 
-    combCache.getOrElseUpdate((n, k), {
-      if k == 0 || k == n then 1
-      else {
-        val numerator = (n - k + 1 to n).product
-        val denominator = (1 to k).product
-        numerator / denominator
-      }
-    })
+    val key = (n, k)
+    Option(combCache.get(key)).getOrElse {
+      val result =
+        if (k == 0 || k == n) 1
+        else {
+          val numerator = (n - k + 1 to n).product
+          val denominator = (1 to k).product
+          numerator / denominator
+        }
+      
+      combCache.put(key, result)
+      result
+    }
   }
 
   /**
@@ -86,8 +95,8 @@ object GameService {
     val probB = binomialProbability(nbDicesB, expectedValueB, occurrencesB, modeB)
 
     val winner =
-      if probA > probB then "A"
-      else if probB > probA then "B"
+      if (probA > probB) "A"
+      else if (probB > probA) "B"
       else "Draw"
 
     (probA, probB, winner)
