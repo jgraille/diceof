@@ -13,16 +13,22 @@ import org.apache.pekko.pattern.CircuitBreaker
 @Singleton
 class GameController @Inject()(val controllerComponents: ControllerComponents)(implicit ec: ExecutionContext, system: ActorSystem) extends BaseController {
 
+  // Future -> Do this in the background and get back to me
+  // CircuitBreaker -> If things keep failing, stop trying for a while.
+
   // Rate limiting: Maximum requests per IP per minute
   private val requestsPerMinute = 60
   private val requestsByIp = scala.collection.concurrent.TrieMap[String, (Int, Long)]()
 
   // Circuit breaker to prevent system overload
+  // If 5 futures fail or take too long, it opens the breaker.
+  // Open state: the breaker is open, no requests are allowed
+  // callTimeout = 2.seconds as we expect less than 10 ms for the roll request
   private val breaker = CircuitBreaker(
-    system.scheduler,
-    maxFailures = 5,
-    callTimeout = 2.seconds,
-    resetTimeout = 1.minute
+    system.scheduler, // The clock that tracks time
+    maxFailures = 5,  // Trip (trébuche) after 5 failures
+    callTimeout = 2.seconds, // Max time the circuit breaker will wait for the code to run and finish 
+    resetTimeout = 1.minute // Open state, the breaker automatically tries again - it goes in the half-open state
   )
 
   private def isRateLimited(ip: String): Boolean = {
@@ -47,6 +53,11 @@ class GameController @Inject()(val controllerComponents: ControllerComponents)(i
       Future.successful(TooManyRequests("Rate limit exceeded. Please try again later."))
     } else {
       breaker.withCircuitBreaker(Future {
+        // This block of code runs in the background
+        // so that the dice game logic doesn’t freeze the whole server
+        // It runs asynchronously and gives the result when it’s done
+
+        // Note: this code doesn't run if 5 failures happen.
         val json = request.body
 
         def parseExpectedValue(value: String): (Int, DiceMode) = {

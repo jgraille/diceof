@@ -5,6 +5,10 @@ import io.gatling.http.Predef._
 import scala.concurrent.duration._
 
 class DiceSimulation extends Simulation {
+
+  // `Open system`, no control over the number of concurrent users
+  // users can keep on arriving, some of them will be answered with 429 errors.
+  // (too many requests)
   
   // For local testing we use HTTP since the dev server typically doesn't have HTTPS configured
   // In a production environment, you would use:
@@ -49,24 +53,34 @@ class DiceSimulation extends Simulation {
         .check(jsonPath("$.winner").exists)
     )
 
+  // Stay within rate limit of 60 requests per minute
   setUp(
     defaultScenario.inject(
-      rampUsers(50).during(30.seconds),
-      constantUsersPerSec(50).during(1.minute)
+      // Montée en charge progressive (linéaire) jusqu'à 20 utilisateurs au bout de 30 secondes
+      rampUsers(20).during(30.seconds),
+      // Injection de 0.67 utilisateur par seconde (0.67*3≈2), soit 2 utilisateurs toutes les 3 secondes
+      // Charge stable qui respecte un débit
+      constantUsersPerSec(0.67).during(30.seconds)
     ),
     complexScenario.inject(
-      nothingFor(30.seconds), // Start after default scenario ramps up
-      rampUsers(30).during(30.seconds)
+      nothingFor(30.seconds),
+      rampUsers(30).during(60.seconds)
     ),
     simpleScenario.inject(
-      nothingFor(1.minute), // Start after complex scenario
-      rampUsers(20).during(30.seconds)
+      nothingFor(1.minute),
+      rampUsers(5).during(30.seconds)
     )
   ).protocols(httpProtocol)
    .assertions(
-     global.responseTime.max.lt(1000),    // All responses should be under 1 second
-     global.responseTime.mean.lt(500),    // Mean response time under 500ms
-     global.successfulRequests.percent.gt(95), // 95% of requests should be successful
-     details("complex_roll_request").responseTime.percentile3.lt(750) // 95th percentile for complex requests
+    // Max response time observed in ms, lt(1000) -> assertion should be under 1 second
+    global.responseTime.max.lt(1000),
+    // Mean response, lt(500) -> this time should be under 500ms
+    global.responseTime.mean.lt(500),
+    // gt(95) -> the success rate should be greater than 95%
+    global.successfulRequests.percent.gt(95),
+    // percentile3: perform the assertion on the 3rd percentile of the metric, 
+    //as configured in gatling.conf (default is 95th).
+    // lt(750) -> the 3rd percentile of the response time should be under 750ms
+    details("complex_roll_request").responseTime.percentile3.lt(750)
    )
 }
