@@ -92,9 +92,9 @@ class GameServiceTest extends AnyFlatSpec with Matchers {
 
   "compareProbabilities" should "correctly identify winner A" in {
     val (probA, probB, winner) = GameService.compareProbabilities(
-      nbDicesA = 5, expectedValueA = 4, occurrencesA = 2,
-      nbDicesB = 3, expectedValueB = 5, occurrencesB = 1,
-      modeA = AtLeast, modeB = AtLeast
+      nbDicesA = 5, expectedValueA = 5, occurrencesA = 2,
+      nbDicesB = 3, expectedValueB = 5, occurrencesB = 2,
+      modeA = AtLeast, modeB = Exact
     )
     winner shouldBe "A"
   }
@@ -110,9 +110,9 @@ class GameServiceTest extends AnyFlatSpec with Matchers {
 
   it should "correctly identify a draw" in {
     val (probA, probB, winner) = GameService.compareProbabilities(
-      nbDicesA = 3, expectedValueA = 4, occurrencesA = 1,
-      nbDicesB = 3, expectedValueB = 4, occurrencesB = 1,
-      modeA = Exact, modeB = Exact
+      nbDicesA = 5, expectedValueA = 5, occurrencesA = 2,
+      nbDicesB = 6, expectedValueB = 5, occurrencesB = 2,
+      modeA = AtLeast, modeB = AtLeast
     )
     winner shouldBe "Draw"
   }

@@ -1,11 +1,12 @@
 import play.sbt.PlayImport.*
 
-name := "DiceGame"
-version := "1.0"
+name := "DiceOf"
+maintainer := "Jean-Baptiste Graille <jbgraille@gmail.com>"
+version := "1.0.0"
 scalaVersion := "2.13.16"
 
 enablePlugins(PlayScala)
-
+// enablePlugins(GatlingPlugin) uncomment to run gatling tests locally
 libraryDependencySchemes += "org.scala-lang.modules" %% "scala-parser-combinators" % "always"
 
 val playVersion = "3.0.7"
@@ -25,5 +26,3 @@ libraryDependencies ++= Seq(
   "org.apache.pekko" %% "pekko-stream" % pekkoVersion,
   "org.apache.pekko" %% "pekko-slf4j" % pekkoVersion
 )
-
-enablePlugins(GatlingPlugin)
