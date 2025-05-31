@@ -1,5 +1,7 @@
+memo
 .bsp/
 .bloop/
 .metals/
 .vscode/
 target/
+conf/application.conf

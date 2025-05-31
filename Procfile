@@ -1,0 +1,1 @@
+web: ./bin/diceof -Dhttp.port=5000
