@@ -5,4 +5,4 @@ memo
 .vscode/
 target/
 conf/application.conf
-.zip
+*.zip
