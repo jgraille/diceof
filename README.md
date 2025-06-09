@@ -4,7 +4,7 @@ Compare dice combinations and find out the most interesting dice roll
 
 <img src="data/mvp1.png" width="600" alt="DiceOf Screenshot">
 
-http://diceof.eba-w9th7fsz.eu-central-1.elasticbeanstalk.com/
+[diceprobabilityversus.com](https://www.diceprobabilityversus.com/)
 
 ## Prerequisites
 - [scala](https://www.scala-lang.org/download/2.13.16.html)
