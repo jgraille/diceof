@@ -6,3 +6,4 @@ memo
 target/
 conf/application.conf
 *.zip
+httpsconfig.md
